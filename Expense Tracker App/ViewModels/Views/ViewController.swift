@@ -9,11 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     var viewModel = ViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     func bindViewModel() {
@@ -24,6 +29,21 @@ class ViewController: UIViewController {
         })
     }
 
+    
+}
 
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = (tableView.dequeueReusableCell(withIdentifier: MyTableViewCell.id, for: indexPath) as? MyTableViewCell) else {
+            fatalError()
+        }
+        
+        return cell
+    }
 }
 

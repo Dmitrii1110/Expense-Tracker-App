@@ -16,6 +16,7 @@
 		B2D09D8527D492160067D8FC /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D09D8427D492160067D8FC /* Dynamic.swift */; };
 		B2D09D8727D4924E0067D8FC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D09D8627D4924E0067D8FC /* ViewModel.swift */; };
 		B2D09D8C27D492F50067D8FC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D09D8B27D492F50067D8FC /* User.swift */; };
+		B2D09D8E27D6048D0067D8FC /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D09D8D27D6048C0067D8FC /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B2D09D8427D492160067D8FC /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		B2D09D8627D4924E0067D8FC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B2D09D8B27D492F50067D8FC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B2D09D8D27D6048C0067D8FC /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				B2D09D7227D491970067D8FC /* ViewController.swift */,
+				B2D09D8D27D6048C0067D8FC /* MyTableViewCell.swift */,
 				B2D09D8927D4929D0067D8FC /* Storyboards */,
 			);
 			path = Views;
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D09D8E27D6048D0067D8FC /* MyTableViewCell.swift in Sources */,
 				B2D09D8727D4924E0067D8FC /* ViewModel.swift in Sources */,
 				B2D09D7327D491970067D8FC /* ViewController.swift in Sources */,
 				B2D09D8C27D492F50067D8FC /* User.swift in Sources */,
