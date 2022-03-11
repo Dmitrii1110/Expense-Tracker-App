@@ -15,6 +15,7 @@
 		B24E367327D7817100E58EB7 /* BillDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E367227D7817100E58EB7 /* BillDetailsView.swift */; };
 		B24E367527D7822E00E58EB7 /* BillPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E367427D7822E00E58EB7 /* BillPaymentView.swift */; };
 		B24E367727D7827D00E58EB7 /* PaymentSuccessfullyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E367627D7827D00E58EB7 /* PaymentSuccessfullyView.swift */; };
+		B24E367A27DA449500E58EB7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B24E367927DA449500E58EB7 /* SnapKit */; };
 		B2D09D6F27D491970067D8FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D09D6E27D491970067D8FC /* AppDelegate.swift */; };
 		B2D09D7127D491970067D8FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D09D7027D491970067D8FC /* SceneDelegate.swift */; };
 		B2D09D7327D491970067D8FC /* HomepageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D09D7227D491970067D8FC /* HomepageTabView.swift */; };
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B24E367A27DA449500E58EB7 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +161,9 @@
 			dependencies = (
 			);
 			name = "Expense Tracker App";
+			packageProductDependencies = (
+				B24E367927DA449500E58EB7 /* SnapKit */,
+			);
 			productName = "Expense Tracker App";
 			productReference = B2D09D6B27D491970067D8FC /* Expense Tracker App.app */;
 			productType = "com.apple.product-type.application";
@@ -187,6 +192,9 @@
 				Base,
 			);
 			mainGroup = B2D09D6227D491970067D8FC;
+			packageReferences = (
+				B24E367827DA449500E58EB7 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = B2D09D6C27D491970067D8FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -450,6 +458,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B24E367827DA449500E58EB7 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B24E367927DA449500E58EB7 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B24E367827DA449500E58EB7 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2D09D6327D491970067D8FC /* Project object */;
 }
